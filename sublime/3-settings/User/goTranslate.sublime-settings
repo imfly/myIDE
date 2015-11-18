@@ -1,0 +1,9 @@
+{     
+  "source_language": "en", // 默认是 '自动检测'
+  "target_language": "zh-CN", // 默认是 en  英文
+  "target_type": "plain",  // 输出格式，plain 或者 html 格式
+  "proxy_enable": "yes",  // 开启或关闭代理
+  "proxy_type": "socks", // socks4 或者 socks5 或者 http
+  "proxy_host": "127.0.0.1",  // 比如 127.0.0.1
+  "proxy_port": "8888"    // 比如 9050
+}

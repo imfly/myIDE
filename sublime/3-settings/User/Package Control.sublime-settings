@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"DocBlockr",
+		"EditorConfig",
+		"Git",
+		"HTML-CSS-JS Prettify",
+		"InputHelper",
+		"JsFormat",
+		"Lodash modules snippets",
+		"MarkdownEditing",
+		"Nodejs",
+		"Package Control",
+		"PlainTasks",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeREPL",
+		"Terminal",
+		"Theme - Soda",
+		"TypeScript",
+		"Vanilla lodash Snippets",
+		"Web Inspector"
+	]
+}
