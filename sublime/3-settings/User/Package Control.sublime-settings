@@ -5,25 +5,21 @@
 	],
 	"installed_packages":
 	[
-		"Alignment",
+		"AutoFileName",
+		"Colorcoder",
+		"ColorPicker",
 		"DocBlockr",
 		"EditorConfig",
+		"Emmet",
 		"Git",
+		"GitGutter",
 		"HTML-CSS-JS Prettify",
-		"InputHelper",
-		"JsFormat",
 		"Lodash modules snippets",
-		"MarkdownEditing",
-		"Nodejs",
 		"Package Control",
 		"PlainTasks",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
-		"SublimeREPL",
 		"Terminal",
-		"Theme - Soda",
-		"TypeScript",
-		"Vanilla lodash Snippets",
-		"Web Inspector"
+		"Theme - Soda"
 	]
 }

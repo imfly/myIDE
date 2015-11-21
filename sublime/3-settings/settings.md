@@ -23,16 +23,9 @@ menu `Preferences -> Package Settings -> Package Control -> Settings - User`, ad
 
 ```
 {
-	"bootstrapped": true,
+...
 	"http_proxy": "proxy.lh.petrochina:8080",
-	"https_proxy": "proxy.lh.petrochina:8080",
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"Package Control",
-		"Theme - Soda"
-	]
+	"https_proxy": "proxy.lh.petrochina:8080"
+...
 }
 ```
