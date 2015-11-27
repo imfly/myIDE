@@ -5,7 +5,9 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"AutoFileName",
+		"BracketHighlighter",
 		"Colorcoder",
 		"ColorPicker",
 		"DocBlockr",
@@ -14,7 +16,10 @@
 		"Git",
 		"GitGutter",
 		"HTML-CSS-JS Prettify",
+		"JavaScript & NodeJS Snippets",
+		"JSHint Gutter",
 		"Lodash modules snippets",
+		"Node Completions",
 		"Package Control",
 		"PlainTasks",
 		"SideBarEnhancements",
