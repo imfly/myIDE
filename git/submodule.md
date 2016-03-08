@@ -55,10 +55,88 @@ $ git checkout master
 * Delete the now untracked submodule files
 * rm -rf path_to_submodule
 
+(5)将子模块设定为某个分支
+
+上述命令默认是`master`分支，比如，要修改为`release`分支，那么可以使用命令：
+
+```
+# add submodule to track master branch
+git submodule add -b master [URL to Git repo]
+
+# update your submodule
+# --remote will also fetch and ensure that
+# the latest commit from the branch is used
+git submodule update --remote
+
+# to avoid fetching use
+git submodule update --remote --no-fetch
+```
+
+Tracking commits
+
+```
+# update submodule in the master branch
+# skip this if you use --recurse-submodules
+# and have the master branch checked out
+cd [submodule directory]
+git checkout master
+git pull
+
+# commit the change in main repo
+# to use the latest commit in master of the submodule
+cd ..
+git add [submodule directory]
+git commit -m "move submodule to latest commit in master"
+
+# share your changes
+git push
+```
+
+Another developer can get the update by pulling in the changes and running the submodules update command.
+
+```
+# another developer wants to get the changes
+git pull
+
+# this updates the submodule to the latest
+# commit in master as set in the last example
+git submodule update
+```
+
+如果是已经添加了子模块，那么最简单的方法是，直接修改`.gitsubmodules`文件，如：
+
+```
+[submodule "SubmoduleTestRepo"]
+    path = SubmoduleTestRepo
+    url = https://github.com/jzaccone/SubmoduleTestRepo.git
+    branch = release
+```
+
+or
+
+```
+[submodule "SubmoduleTestRepo"]
+    path = SubmoduleTestRepo
+    url = https://github.com/jzaccone/SubmoduleTestRepo.git
+    branch = <sha-commit-id>
+```
+
+更新的时候，可以使用：
+
+```
+git submodule update --remote
+```
 
 #### 参考
+
+官方文档：http://www.vogella.com/tutorials/Git/article.html#submodules
+
+问答文档: http://stackoverflow.com/questions/1777854/git-submodules-specify-a-branch-tag
+
 Git Submodule的坑: http://www.cocoachina.com/industry/20130509/6161.html
+
 Git submodule tutorial: http://fiji.sc/Git_submodule_tutorial
+
 http://www.stormzhang.com/git/2014/02/13/git-submodule/
 
 删除子模块: http://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
